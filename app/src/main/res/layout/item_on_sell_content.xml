@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/on_sell_cover"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"></ImageView>
+
+        <TextView
+            android:id="@+id/on_sell_context_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="孝敬士大夫但是范德萨范德萨芬撒旦方法都是上的"></TextView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/on_sell_origin_pries_tv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/tmlle"
+               android:text="原价12元"></TextView>
+
+           <TextView
+               android:id="@+id/on_sell_off_prise_tv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="优惠价1元"
+               android:layout_marginLeft="10dp"
+               android:textColor="@color/tmlle"></TextView>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

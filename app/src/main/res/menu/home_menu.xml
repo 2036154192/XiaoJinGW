@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homes"
+        android:icon="@drawable/souye"
+        android:title="首页" />
+    <item android:title="精选"
+        android:id="@+id/selecteds"
+        android:icon="@drawable/jinxuan"/>
+    <item android:title="特惠"
+        android:id="@+id/red_packet"
+        android:icon="@drawable/tehui"/>
+    <item android:title="搜索"
+        android:id="@+id/search"
+        android:icon="@drawable/sousuo"/>
+</menu>

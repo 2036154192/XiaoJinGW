@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sob="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_pager_parent"
+    android:background="@color/coloerPageBg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.fragment.HomePacketFragment">
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_pager_refresh">
+
+    <com.lcodecore.tkrefreshlayout.views.TbNestScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_pager_scroller">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/home_pager_header_container">
+
+                <com.example.xiaojingw.ui.custom.AutoLoopViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    sob:duration="2000"
+                    android:id="@+id/looper_pager"></com.example.xiaojingw.ui.custom.AutoLoopViewPager>
+
+                <LinearLayout
+                    android:id="@+id/looper_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"></LinearLayout>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_pager_content_list"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </com.lcodecore.tkrefreshlayout.views.TbNestScrollView>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</LinearLayout>

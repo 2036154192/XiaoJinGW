@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/ticker_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/fanhui"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="淘口令"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"></TextView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ticker_cover"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_300"
+        android:src="@color/orange"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_33"></ImageView>
+
+    <EditText
+        android:id="@+id/ticker_code"
+        android:layout_width="@dimen/dp_244"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:text="$sfddfsdfdfdf$"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/shape_ticket_box_bg"
+        android:gravity="center"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/ticker_copy_or_open_btn"
+        android:layout_width="@dimen/dp_141"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:text="领券"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@drawable/shape_button_box_bg"
+        android:layout_marginTop="@dimen/dp_30"></TextView>
+
+</LinearLayout>
